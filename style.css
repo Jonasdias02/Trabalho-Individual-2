@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root{
+   --cor-principal:gray;
+   --cor-texto:darkorange;
+   --cor-background:rgba(0, 0, 0, 0.977);
+}
+body{
+    background-color: var(--cor-background);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik' ,sans-serif;
+}
+.cabecalho{
+    
+    padding: 2%;
+}
+.cabecalho h1{
+    color: var(--cor-texto);
+    margin-right: 5%;
+}
+
+.cabecalho img {
+    margin-right: 15%;
+    width: 70px;
+    
+}
+
+.container-input{
+    display: flex;
+    justify-content: space-between;
+    
+   
+}
+.input{
+    color: var(--cor-texto);
+}
+
+.container-input .input{
+    width: 365px;
+    height: 350px;
+}
+.cesarNumber{
+    width: 40px;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+.tamanho{
+    margin-left: 150px;
+}
+
+#input-texto{
+    width: 345px;
+    height: 330Px;
+    font-size: 20px;
+    color: var(--cor-texto);
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    resize: none;
+    outline: 0;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.cabecalho h1{
+    text-align: center;
+ 
+}
+
+
+
+.container-opcoes{
+    text-align: center;
+    margin-right: 60px;
+    flex-direction: column;
+    font-size: 20px;
+    color: var(--cor-principal);
+   
+    
+}
+
+.h1-opcoes{
+    text-align: center;
+    font-size: 20px;
+    color: var(--cor-texto);
+}
+
+
+#output{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid var(--cor-texto);
+    border-radius: 20px;
+    width: 315px;
+    height: 400px;
+    margin-right: 10%;
+    color: white;
+}
+
+#output h2{
+    text-align: center;
+    font-size: 25px;
+    color: var(--cor-texto);
+}
+
+#output span{
+    font-size: 16px;
+    text-align: center;
+
+}
+
+#output img {
+    max-width: 315px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    margin-top: 0.5%;
+}
+
+.container-btn button{
+    border: 3px solid white;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: var(--cor-texto);
+    color: white;
+    width: 155px;
+    height: 49px;
+    
+    cursor: pointer;
+}
+.btn-descriptografar{
+    margin-left: 4%;
+}
+
+.btn-copiar{
+    border: 2px solid white;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: var(--cor-texto);
+    color: white;
+    width: 150px;
+    height: 47px;
+    margin-bottom: 10%;
+    margin-left: 30%;
+    cursor: pointer;
+}
+
+.container-btn button:hover{
+    border: 2px solid var(--cor-texto);
+    transition: 0.5s all;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5%;
+    margin-top: 15px;
+    background: var(--cor-texto);
+    color: white;
+}
+.rodape h3{
+    font-size: 16px;
+
+}
+
+.icon ion-icon{
+width: 25px;
+height: 25px;
+visibility: inherit;
+color: var(--cor-texto);
+}
+
+.icon ion-icon:hover{
+    color: var(--cor-texto);
+}
+main{
+    margin-left: 10%;
+}

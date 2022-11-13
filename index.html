@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador e Codificador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="fave.icon" type="image/x-icon">
+</head>
+<body>
+    <main class="container">
+        <header class="cabecalho">
+            <img src="imgjonas.png"    alt="imagem jonas">
+            <h1>Mensagens Codificadas</h1>
+            
+        </header>
+
+        <div class="container-opcoes" id="opcoes">
+            <h1 class="h1-opcoes">Cifra de César ou Base 64</h1>
+            <div class="radio1">
+                <div class="group-radio">
+                    <input id="cesar" type="radio" name="radiocifra" onclick="someCesar()" checked>
+                    <label for="cesar" class="cesar"></label>CifradeCesar
+                </div>
+                <div class="group-radio">
+                    <input id="b64" type="radio" name="radiocifra" onclick="someCesar()">
+                    <label for="b64" class="b64"></label>Base64
+                </div>
+                </div>
+        </div>
+    
+    <div class="container-input">
+        <div class="input">
+            <div class="tamanho">
+                <input type="number" class="cesarNumber" onblur="aceitaNumero()" placeholder="número" value="1" min="1">
+            </div>
+           <textarea id="input-texto" placeholder="Digite o seu texto aqui..."></textarea>
+            <span>APENAS: Apenas letras maiúsculas e sem acento</span>
+        </div>
+
+    <div id="output">
+        <img src="imgjonas.png"     alt="logo jonas">
+        <h2>Sua mensagem aparecerá aqui!</h2>
+        <spam>Digite um texto que deseje Codificar ou Descodificar.</spam>
+    </div>
+    </div>
+    
+    <div class="buttons">
+        <div class="container-btn">
+            <br>
+            <button onclick="criptografar()" class="btn-criptografar">Codificar</button>
+            <button onclick="descriptografar()" class="btn-descriptografar">Descodificar</button>
+        </div>
+    </div>
+    </main>
+    <br>
+
+    <footer class="rodape">
+        <div class="icones">
+            <a href="https://github.com/Jonasdias02"><ion-icon name="logo-github"></ion-icon></a>
+            <a href="https://www.linkedin.com/in/jonas-dias-631724247/"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="https://www.instagram.com/jonasdias_02/"><ion-icon name="logo-instagram"></ion-icon></a>
+        </div>
+        <h3>Acesse as redes</h3>
+    </footer>
+
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
